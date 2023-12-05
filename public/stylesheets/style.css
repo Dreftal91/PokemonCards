@@ -15,9 +15,13 @@ a {
   width: 550px;
 }
 
-.card-image{
-
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 48px;
 }
+
 .card-image img {
   border: solid goldenrod 5px;
   height: 350px;
@@ -37,6 +41,7 @@ a {
   border: solid goldenrod 5px;
   border-radius: 50px;
 }
+
 .title-space-text {
   font-size: 40px;
 }
@@ -50,12 +55,14 @@ a {
 .atwo-energy img{
   height: 40px;
 }
+
 .title-space {
   justify-content: space-around;
   align-items: center;
   display: flex;
   height: 20%;
 }
+
 .attack-one {
   padding: 20px 0px 0px 0px;
   justify-content: space-around;
@@ -64,6 +71,7 @@ a {
   font-size: 30px;
   border-bottom: solid black 5px;
 }
+
 .attack-two {
   padding: 20px 0px 0px 0px;
   justify-content: space-around;
@@ -75,17 +83,21 @@ a {
 .electric {
   height: 20px;
 }
+
 .fighting {
   height: 40px;
 }
+
 .normal {
   height: 40px;
 }
+
 .weak-resist-n-retreat {
   justify-content: space-around;
   align-items: center;
   display: flex;
 }
+
 .categories {
   justify-content: space-around;
   align-items: center;

@@ -1,0 +1,44 @@
+mixin pokemonCard(cardinfo)
+
+    div.card
+        div.card-top
+            div.title-space
+                div.title-space-text
+                    h4.name=cardinfo.name
+                div.title-space-hp
+                    div.title-space-hp-hp
+                        h4 HP
+                    div.title-space-hp-number
+                        h4.hp=cardinfo.hp
+                div.title-space-img
+                    img(src=cardinfo.type)
+            div.card-image
+                img(src=cardinfo.image class="pimage")
+        div.card-bottom
+            div.attacks
+                div.attack-one
+                    div.aone-energy
+                        img(src=cardinfo.attack1type1)
+                        img(src=cardinfo.attack1type2)
+                        img(src=cardinfo.attack1type3)
+                    div.aone-name
+                        h4=cardinfo.attack1
+                    h4=cardinfo.attack1damage
+                div.attack-two
+                    div.atwo-energy
+                        img(src=cardinfo.attack2type1 class="electric")
+                        img(src=cardinfo.attack2type2 class="normal")
+                        img(src=cardinfo.attack2type3 class="normal")
+                    div.atwo-name
+                        h4=cardinfo.attack2
+                    h4=cardinfo.attack2damage
+                div.weak-resist-n-retreat
+                    div.weak(class="categories")
+                        h4 Weakness:
+                        img(src=cardinfo.weakness class="fighting")
+                        h4=cardinfo.weaknessquantity
+                    div.resist(class="categories")
+                        h4 Resistance:
+                    div.retreat(class="categories")
+                        h4 Retreat:
+                        img(src=cardinfo.retreat class="normal")
